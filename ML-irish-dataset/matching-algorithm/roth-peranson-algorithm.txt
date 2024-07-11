@@ -1,0 +1,47 @@
+The Roth-Peranson algorithm, named after economists Alvin E. Roth and Elliot Peranson, is a sophisticated method for matching participants in a marketplace, such as medical residents to residency programs. This algorithm is designed to create "stable matches," meaning that no participant prefers another match over the one they have been assigned. The algorithm is based on the work of David Gale and Lloyd Shapley, and Roth and Shapley were awarded the Nobel Prize in Economics for their contributions to the theory of stable allocations and market design.
+
+Here's a detailed breakdown of how the Roth-Peranson algorithm works, drawing insights from the provided sources:
+
+### Step 1: Rank Order Lists
+
+Both applicants and programs submit rank order lists of their preferences. An applicant ranks programs in order of preference, and each program ranks applicants in order of preference. These lists are crucial for determining the stability of matches.
+
+### Step 2: Temporary Matches
+
+The algorithm starts by considering each applicant, moving down their rank order list. For each applicant, the algorithm attempts to match them with their most preferred program that has not yet filled its quota. This creates a temporary match.
+
+### Step 3: Displacement
+
+As applicants are considered, better matches from the perspective of the program may displace candidates with a temporary match. This means that if a higher-ranked applicant is waiting, the lower-ranked applicant currently matched with the program is moved down the list. This process continues until each applicant's rank order list has been exhausted.
+
+### Step 4: Stable Matches
+
+By the end of this process, all applicants will either be matched to the best program they can be, relative to their competition, or will have failed to match entirely. At this point, all matches are stable, meaning no applicant or program wishes to switch places with another pair.
+
+### Minimizing Strategic Behavior
+
+One of the strengths of the Roth-Peranson algorithm is its design to minimize the potential for strategic rank order lists. By creating a system where applicants and programs are encouraged to list their true preferences, the algorithm reduces the incentive for gaming the system.
+
+### Handling Complementarities
+
+While the basic implementation of the Roth-Peranson algorithm focuses on individual applicants and programs, further work is needed to adapt it for scenarios involving pairs or groups of applicants (couples). This adaptation is necessary because the current algorithm assumes that each applicant is matched individually.
+
+### Implementation and Software Packages
+
+The Roth-Peranson algorithm has been implemented in various software packages, including Python libraries like `matching` and R packages like `matchingMarkets`. These implementations facilitate the application of the algorithm in real-world settings, such as the National Resident Matching Program (NRMP) in the United States.
+
+### Conclusion
+
+The Roth-Peranson algorithm represents a sophisticated approach to matching in competitive environments. Its emphasis on stability, minimizing strategic behavior, and adaptability to various scenarios makes it a valuable tool in fields ranging from medicine to education.
+
+Citations:
+[1] https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8368266/#:~:text=Roth%2DPeranson%20allows%20couples%20to,%2FC%2C%20in%20that%20order.
+[2] https://github.com/J-DM/Roth-Peranson
+[3] https://www.nrmp.org/intro-to-the-match/how-matching-algorithm-works/
+[4] https://web.stanford.edu/~niederle/nrmpdesign.pdf
+[5] https://en.wikipedia.org/wiki/National_Resident_Matching_Program
+[6] https://www.researchgate.net/figure/Example-of-run-through-of-the-Roth-Peranson-algorithm-student-proposing-deferred_tbl1_340722340
+[7] https://vishnuravi.medium.com/how-long-does-the-residency-match-algorithm-take-to-run-c38c06cd4d57
+[8] https://wp.nyu.edu/mrxuecon/stable-matching-models-with-couples-history-evolution-and-application/
+[9] https://natmatch.com/history.html
+[10] https://web.stanford.edu/~alroth/papers/rothperansonaer.PDF
