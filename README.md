@@ -9,5 +9,7 @@
   - macOS/Linux `source venv/bin/activate`
   - Windows `.\env\Scripts\activate`
   - deactivating `deactivate`
-3. With the environment activate install all packages `pip install -r requirements.txt
-`
+3. With the environment activate install all packages `pip install -r requirements.txt`
+
+### NOTE: 
+<h4> MLProjects used Jupyter Notebook so need need for creating and activating virtualenv</h4> 
