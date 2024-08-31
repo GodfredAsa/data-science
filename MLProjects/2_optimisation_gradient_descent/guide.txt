@@ -1,0 +1,25 @@
+LESSON CONTENTS 
+BRIEF: HOW MACHINE LEARNING ACTUALLY WORKS AS WELL DEEP LEARNING AND NEURAL NETWORKS 
+    - Optimization
+    - Calculus 
+    - Derivatives 
+    - Loops 
+    - Algorithms 
+    - Gradient Descent 
+
+    STEPS INVOLVED IN MACHINE LEARNING AND HOW MACHINE LEARNS 
+    - Many machine learning follows 3 main processes 
+      - make PREDICTION (coefficients)
+      - Calculate the error, thats how far from the data 
+      - Learning step thats where we adjust our prediction based on the outcome we can make change to the coefficients 
+      * Go back to step one to make a new prediction using the modified or new generated coefficients then step 2 again and the learn. Hence there are 3 steps 
+      * The process described above for solving a problem is referred to as ALGORITHM
+
+
+      COST FUNCTION: CALCULATING THE ERROR using y = mx + c, linear regression as used case. 
+      RSS - Residual Some of Squares. The lower the number the better the line and estimate for coefficiences.
+
+      The big part of machine learning is opting or optimise for a solution with the lowest cost or  for a solution with the lowest cost.
+      Finding the best solution falls on Optimization
+
+      Other names for Cost Function are Loss Function, Objective Function, Error Function 
